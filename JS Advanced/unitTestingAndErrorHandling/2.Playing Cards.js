@@ -24,10 +24,6 @@ function cardFactory(face, suit) {
   if (!(faces.includes(face) && suits[suit])) {
     throw new Error("Invalid face or suit");
   }
-
-  if (face != face.toUpperCase()) {
-  }
-
   let card = {
     face,
     suit,
